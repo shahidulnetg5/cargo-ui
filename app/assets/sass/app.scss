@@ -1,0 +1,549 @@
+@import "custom";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../../node_modules/font-awesome/scss/font-awesome";
+
+
+// My customize styles globally
+.flexCenter{
+    display: flex;
+    align-items: center;
+}
+.d-flex{
+    display: flex;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.padding-off{
+    padding: 0;
+}
+.padding-left-off{
+    padding-left: 0;
+}
+.padding-right-off{
+    padding-right: 0;
+}
+
+
+// Header styles
+.nec-header-top {
+  background: #f5f5f5;
+  ul{
+      margin-bottom: 0.6rem;
+      margin-top: 0.6rem;
+    li{
+      a{
+        color: #aaaaaa;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.main-header{
+  .nec-logo{
+    padding: 20px 0;
+  }
+  .header-widgets{
+    padding: 10px;
+
+    .widget-icon-box{
+      width: 24%;
+      display: inline-block;
+      margin: 5px 0;
+      .icon-box {
+        float: right;
+      }
+      .icon-box i{
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 13px;
+        color: #5CB85C;
+
+      }
+      .icon-box h6{
+        display: inline;
+        vertical-align: middle;
+        font-size: 15px;
+        color: #aaaaaa;
+      }
+
+      .icon-box span{
+        display: block;
+        padding: 5px 0;
+        font-size: 16px;
+        color: #444444;
+      }
+      .form-inline {
+        display: flex;
+        float: right;
+      }
+    }
+  }
+
+  .bg-faded {
+    background-color: #E21F31;
+    border-radius: 25px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+  }
+  .navbar i{
+    color: #fff;
+  }
+  .dropdown-menu {
+    background-clip: padding-box;
+    background-color: #E21F31;
+    color: #fff;
+    margin: 0.4rem 0 0;
+    border: 0;
+  }
+  .dropdown-item {
+  color: #fff !important;
+  }
+  .dropdown-item:focus, .dropdown-item:hover {
+  	color: #fff;
+  	background-color: #A90034;
+  }
+}
+
+// News Tricker Section
+.latest-news{
+  padding: 5px 0 30px 0;
+
+  #ticker_container{
+    margin-top:6px;
+  }
+  #newscontent {
+    margin-right: 10px;
+    float: left;
+  }
+  #newscontent a {
+    color: #5CB85C;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  #news {
+    display: none;
+  }
+  #controls {
+   float: right;
+  }
+  #news {
+    display: none;
+  }
+  .icon {
+    fill: #5CB85C;
+  }
+}
+// End ews Tricker Section
+
+
+// Customize css for Showcase section
+  #showcase{
+    margin: 20px;
+
+    #myCarousel{
+      .orbit-over{
+        background: #e21f31 none repeat scroll 0 0;
+        padding: 25px;
+        position: absolute;
+        right: 25px;
+        top: 30px;
+        width: 280px;
+
+        form h5{
+          color: #fff;
+          .form-control{
+            border-radius: 0;
+            border: 0;
+          }
+        }
+        .Tracking-from form button{
+          background: #A90034;
+          color: #fff;
+        }
+        .nec-loginform form button{
+          background: #A90034;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+// Send Money Section
+#sendMoney{
+  .send-money--online{
+    padding: 20px;
+  }
+}
+
+.btn-select {
+    position: relative;
+    padding: 0;
+    min-width: 236px;
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 20px;
+    min-height: 30px;
+}
+
+.btn-select .btn-select-value {
+    padding: 8px 12px;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 34px;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+}
+
+.btn-select .btn-select-arrow {
+    float: right;
+    line-height: 20px;
+    padding: 6px 10px;
+    top: 0;
+    color: #fff;
+}
+
+.btn-select ul {
+    display: none;
+    background-color: white;
+    color: black;
+    clear: both;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: none !important;
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    top: 33px;
+    z-index: 999;
+}
+
+.btn-select ul li {
+    padding: 3px 6px;
+    text-align: left;
+}
+
+.btn-select ul li:hover {
+    background-color: #f4f4f4;
+}
+
+.btn-select ul li.selected {
+    color: white;
+}
+
+/* Success Start */
+.btn-select.btn-success:hover, .btn-select.btn-success:active, .btn-select.btn-success.active {
+    border-color: #4cae4c;
+}
+
+.btn-select.btn-success ul li.selected {
+    background-color: #4cae4c;
+    color: white;
+}
+
+.btn-select.btn-success ul {
+    border: #4cae4c 1px solid;
+}
+
+.btn-select.btn-success .btn-select-value {
+    background-color: #5cb85c;
+    border: #4cae4c 1px solid;
+}
+
+.btn-select.btn-success:hover, .btn-select.btn-success.active {
+    background-color: #449d44;
+}
+/* Success End */
+.btn-select.btn-select-light .btn-select-value {
+    background-color: white;
+    color: black;
+}
+.form-inline .form-group {
+  align-items: left;
+  flex-direction: column;
+  margin: 0 15px;
+}
+
+.form-inline label {
+  margin-bottom: 8px;
+}
+
+.onlineBtnCont {
+  float: left;
+  height: 142px;
+  margin: 50px;
+  padding: 0;
+  width: 296px;
+}
+.logBtn {
+  float: left;
+  margin: 0;
+  padding: 60px 10px;
+  text-align: center;
+  transform: skew(-25deg, 0deg);
+  width: 115px;
+}
+.onlineBtnCont .logBtn a {
+  color: #fff;
+  float: left;
+  font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  transform: skew(25deg, 0deg);
+}
+.onlineBtnCont .logBtn a span {
+  color: #fff;
+  font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+//Track Payment Section
+.track-payment{
+  .ownRcont {
+    .cutBox{
+      img{
+        margin-bottom: 20px;
+      }
+      h5{
+        color: #449D44;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// Partners Section
+.our-partners{
+  .partners-list{
+    padding: 30px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+//Customize css for Main Post section
+
+// Footer section Styles
+footer{
+    .footer{
+      background: #f5f5f5;
+      .footer-top-left{
+        display: flex;
+        align-items: center;
+        .footer-address{
+          .companey-address{
+            line-height: 18px;
+            text-align: left;
+            margin-top: 15px;
+            font-size: 14px;
+          }
+        }
+      }
+      .footer-top-right{
+        padding-top: 20px;
+        .footer__item{
+
+        }
+        .footer__item span{
+          font-weight: bold;
+          font-size: 14px;
+        }
+        .footer__item ul li a{
+          font-size: 14px;
+        }
+      }
+      .conditional-links{
+        ul{
+          margin-bottom: 5px;
+        }
+        ul > li> a{
+          font-size: 14px;
+          border-right: 1px solid #f5f5f5;
+        }
+      }
+      .copyright p{
+        font-size: 14px;
+      }
+      .footer-botttom{
+        .footer-bottom-left{}
+        .footer-bottom-right{
+          .social-footer{}
+          .social-footer p{
+
+          }
+          .social-footer{
+            .btn-social {
+              border: 2px solid #313131;
+              border-radius: 100%;
+              display: inline-block;
+              font-size: 14px;
+              height: 30px;
+              line-height: 25px;
+              text-align: center;
+              width: 30px;
+            }
+          }
+        }
+      }
+    }
+}
+
+//Others Pages Styles
+
+.breadcrumb {
+  border-radius: 0;
+  padding: 0.5em 1rem;
+
+  .breadcrumb-item.active {
+    color: #e21f31;
+  }
+}
+
+.faq-list{
+  color: #E21F31;
+  font-size: 16px;
+  font-weight: bold;
+}
+.faq-content{
+  padding: 10px 0 ;
+}
+
+.form-control {
+  border: 1px solid #5CB85C;
+}
+
+.carousel-caption {
+  top: 70px;
+  color: #fff;
+  left: 5%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: absolute;
+  z-index: 10;
+  text-align: left;
+}
+
+/*form styles*/
+#msform {
+	width: 400px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+}
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+
+	/*stacking fieldsets above each other*/
+	position: absolute;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+/*buttons*/
+#msform .action-button {
+	width: 100px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+}
+#progressbar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none;
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: #27AE60;
+	color: white;
+}
